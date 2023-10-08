@@ -5,4 +5,4 @@ LEFT JOIN students s ON s.id = g.student_id
 LEFT JOIN teachers t ON t.id = d.teacher_id 
 WHERE t.id = 3 AND s.id = 4
 GROUP BY t.full_name  
-ORDER BY g.grade;
+ORDER BY average_grade;

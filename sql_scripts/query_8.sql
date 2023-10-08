@@ -4,4 +4,4 @@ LEFT JOIN disciplines d ON d.id = g.disciplines_id
 LEFT JOIN teachers t  ON t.id = d.teacher_id  
 WHERE t.id = 3
 GROUP BY t.full_name 
-ORDER BY g.grade DESC;
+ORDER BY average_grade DESC;
